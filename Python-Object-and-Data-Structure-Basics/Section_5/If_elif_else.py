@@ -35,4 +35,4 @@ if name == "Natalia":
 elif name == "Samy":
     print("hello Samy")
 else:
-    print("what is your name?")
+    print("what is your name?  ")

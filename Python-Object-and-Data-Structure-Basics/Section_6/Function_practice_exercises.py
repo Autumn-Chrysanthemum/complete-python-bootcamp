@@ -3,7 +3,8 @@ def lesser_of_two_evens(num1, num2):
     DOCSTRING: LESSER OF TWO EVENS
     :param num1: two given numbers
     :param num2:
-    :return: returns the lesser of two given numbers if both numbers are even, but returns the greater if one or both numbers are odd¶
+    :return: returns the lesser of two given numbers if both numbers are even,
+    but returns the greater if one or both numbers are odd¶
     '''
     if num1%2 == 0 and num2%2 ==0:
         return min(num1,num2)
@@ -116,11 +117,11 @@ def blackjack(a,b,c): # TODO: DO NOT UNDERSTAND THIS PROBLEM
     :return:if their sum is less than or equal to 21, return their sum.
     If their sum exceeds 21 and there's an eleven, reduce the total sum by 10. Finally, if the sum (even after adjustment) exceeds 21, return 'BUST'
     '''
-    if sum([a+b+c]) <= 21:
-        return sum([a+b+c])
+    if sum([a,b,c]) <= 21:
+        return sum([a,b,c])
 
     elif sum([a+b+c]) > 21 and 11 in [a,b,c]:
-        new_sum = sum([a+b+c]) - 10
+        new_sum = sum([a,b,c]) - 10
         if new_sum < 21:
             return new_sum
         else:
@@ -186,22 +187,6 @@ def spy_game(nums):
     :param nums: list of integers
     :return: True if it contains 007 in order
     '''
-    # list_007 = []
-    # add = True
-    # for index,num in enumerate(nums):
-    #     if num == 0 or num == 7:
-    #         list_007.append(num)
-    #         print(list_007)
-    # return list_007 in nums
-
-    # my solution - not correct
-    # list_007 = [0,0,7]
-    # new_list = []
-    # for num in nums:
-    #     if num in list_007:
-    #         new_list.append(num)
-    #
-    # return list_007 == new_list
 
     # Soje solution - genius
     code = [0,0,7, 'x']
@@ -211,7 +196,7 @@ def spy_game(nums):
     return len(code) == 1
 
 
-# print(spy_game([4,6,0,10,7,0,6,5,7]))
+print(spy_game([4,6,0,10,7,0,6,5,7]))
 
 
 def count_primes(num):
@@ -234,8 +219,8 @@ def count_primes(num):
     while x <= num:
         # print(x)
         # check if x is prime number
-        for y in range (3,x,2): #  we want to check odd numbers there, even numbers we can divide by 2 so it is NOT a prime numbers
-        # for y in list_prime: #  we want to check odd numbers there, even numbers we can divide by 2 so it is NOT a prime numbers
+        # for y in range (3,x,2): #  we want to check odd numbers there, even numbers we can divide by 2 so it is NOT a prime numbers
+        for y in list_prime: #  we want to check odd numbers there, even numbers we can divide by 2 so it is NOT a prime numbers
             # print(f'x={x}, y={y}')
             if x%y == 0: # in this case it is not a prime number there
                 x += 2 # to hop ahead past that even number

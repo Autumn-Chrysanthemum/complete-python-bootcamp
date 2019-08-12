@@ -6,7 +6,7 @@ print(2*2)
 print(3/2)
 print(7%4) # returns reminder
 print(50%5) # to check if number evenly divisible by another number
-print(23%2)  # to check if it is even or odd
+print(23%2)  # to check if it is even or odd, even reminder == 0
 print(2**3)
 print((2+10)*(10+3))
 

@@ -12,14 +12,14 @@ mylist[1:]
 
 another_list = ["four", "five"]
 
-mylist + another_list # not saving that
+mylist + another_list # not saving that, have to assign
 new_list = mylist + another_list
 print(new_list)
 
 new_list[0] = "ONE ALL CAPS"
 print(new_list)
 
-new_list.append("six") # affecting in place
+new_list.append("six") # affecting in place, will modify list
 
 print(new_list)
 
@@ -29,27 +29,28 @@ print(new_list)
 print(new_list.pop()) # and return it
 print(new_list)
 
-popped_item = new_list.pop()
+popped_item = new_list.pop() # we can save popped item
 print(popped_item)
 
 
-new_list.pop(0)
+new_list.pop(0) # can remove particular element
 print(new_list)
 
 new_list =  ["a", "e", "x", "b", "c"]
 num_list = [4,1,8,3]
 
-new_list.sort() #in place method, does not return anything, just sort permanently
+new_list.sort() # in place method, does not return anything, just sort permanently
 print(new_list)
 
 my_sorted_list = new_list.sort() # INCORRECT WAY TO DO IT!!!!
+type(my_sorted_list) # NoneType
 print(my_sorted_list)
 
 new_list.sort()
-my_sorted_list = new_list
+my_sorted_list = new_list # correct way to do it
 print(my_sorted_list)
 
-num_list.reverse()  #in place method, does not return anything, just sort permanently
+num_list.reverse()  # in place method, does not return anything, just sort permanently
 print(num_list)
 
 # assessment

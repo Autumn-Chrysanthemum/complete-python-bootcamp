@@ -14,6 +14,6 @@ print(1==1 or 2==2)
 print(1==3 or 2==2)
 print(1==3 or 5==2) # only if both false we get False
 
-print(not (1 == 1))
+print(not (1 == 1)) # opposite boolean
 print(not 1 == 1)
 print(not 1 != 1)

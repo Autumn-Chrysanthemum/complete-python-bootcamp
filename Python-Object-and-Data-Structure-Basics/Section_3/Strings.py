@@ -20,7 +20,7 @@ mystring[9] # the same as mystring[-1]
 
 mystring = 'abcdefghijk'
 mystring[2:] #cdefghijk
-mystring[:3] # stop index, up to but not included
+mystring[:3] # stop index, up to but NOT included
 mystring[3:6]
 mystring[1:3]
 mystring[::] # all string
@@ -41,7 +41,7 @@ letter = letter * 10
 print(letter)
 
 x = "Hello Word"
-x = x.upper()
+x = x.upper() # not in place, have to reassign
 print(x)
 
 x = "Hello Word"
